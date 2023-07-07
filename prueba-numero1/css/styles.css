@@ -1,0 +1,121 @@
+:root{
+      --textColor: #dadbdf;
+      --bgTcolor: #0000006b;
+      --bgc: #32508E;
+      --inputColor: #1a2f4b;
+}
+
+body {
+     
+      background-color: #0e0b29;
+}
+
+.container{
+  
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: var(--bgcolor,  #0000006b);
+  color: var(--textColor, #afacac);
+  margin: 8em auto ; 
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 4px 17px rgb(75, 68, 68);
+}
+
+.container__content{
+      position: absolute;
+      top: 0;
+      left: 2em;
+      box-sizing: border-box;
+      padding: 1.4em;
+      width: 50%;
+}
+
+.container__title {
+      margin: left 1em;
+      font-size: 2rem;
+}
+
+.container__input {
+      display: block;
+      border: none;
+      font-size: 1rem;
+      --inputColor: #1a2f4b;
+      color: var(--textColor , #dadbdf);
+      border-bottom: 1px solid var(--inputColor, #1a2f4b );
+      background-color: transparent;
+      margin: 1.6em 0;
+      outline: none;
+}
+
+.container__submit {
+      margin-top: 2em;
+      width: 130px;
+      border-radius: .5em;
+      background-color: rgba(0, 0, 0, 0);
+      color: var(--textColor, #afacac), #afacac;
+      box-shadow: 0 2px 4px rgba(223, 228, 222, 0.795);
+      cursor: pointer;
+}
+
+.container__submit:hover{
+      background-color:#63be57 ;
+      color: #1a1818;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.795);
+}
+
+.circle {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(223, 228, 222, 0.795);
+      line-height: 40px;
+      text-align: center;
+}
+
+.aside {
+      position: absolute;
+      bottom: 3em;
+      right: 2em;
+      padding: 0 2em;
+      
+}
+
+.aside__button {
+      background-color: var(--bgc);
+      color: var(--textColor , #dadbdf);
+      display: block;
+      padding: 0.8em;
+      margin: 2em 0;
+      width: 150px;
+      border: none;
+      cursor: pointer;
+      border-radius: 0.4em;
+}
+
+.facebook {
+      background-color: var(--bgc , #32508E);
+}
+
+.twitter {
+     --bgc: #3a9fec; 
+}
+
+.google {
+      --bgc: #8f0e0e;
+}
+
+.facebook:hover {
+      background-color: #0a3266;
+}
+
+.twitter:hover{
+      background-color: #007ef3;
+}
+
+.google:hover {
+      background-color: #c51414;
+}
